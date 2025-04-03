@@ -1,0 +1,5 @@
+export * from './data.entity'
+export * from './qris.entity'
+export * from './additional_information.entity'
+export * from './acquirer.entity'
+export * from './switching.entity'

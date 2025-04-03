@@ -1,0 +1,20 @@
+// Define additional information detail tags
+export const AdditionalInformationTags = {
+    BILL_NUMBER: '01',
+    MOBILE_NUMBER: '02',
+    STORE_LABEL: '03',
+    LOYALTY_NUMBER: '04',
+    REFERENCE_LABEL: '05',
+    CUSTOMER_LABEL: '06',
+    TERMINAL_LABEL: '07',
+    PURPOSE_OF_TRANSACTION: '08',
+    ADDITIONAL_CONSUMER_DATA_REQUEST: '09',
+    MERCHANT_TAX_ID: '10',
+    MERCHANT_CHANNEL: '11',
+    RFU: '12',
+    RFU_START: "50",
+    RFU_END: "99",
+    PAYMENT_SYSTEM_SPECIFIC_START: "01",
+    PAYMENT_SYSTEM_SPECIFIC_END: "49",
+    PAYMENT_SYSTEM_SPECIFIC: '13'
+};
