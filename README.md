@@ -17,7 +17,7 @@ A robust JavaScript/TypeScript library for generating and manipulating QRIS (QR 
 ## Installation
 
 ```bash
-npm install modify-qris-js
+npm install modify-qris
 ```
 
 ## Quick Start
@@ -25,7 +25,7 @@ npm install modify-qris-js
 ### Basic Usage
 
 ```typescript
-import { QRIS, SourceType, PaymentFeeCategory } from 'modify-qris-js';
+import { QRIS, SourceType, PaymentFeeCategory } from 'modify-qris';
 import path from 'path';
 
 // Initialize QRIS with configuration
@@ -54,7 +54,7 @@ qris.generateQRFile('output.png')
 ### Reading from an Existing QR Image
 
 ```typescript
-import { QRIS, SourceType } from 'modify-qris-js';
+import { QRIS, SourceType } from 'modify-qris';
 import path from 'path';
 
 // Initialize QRIS from an image
@@ -96,7 +96,7 @@ generateOutputs();
 The library provides robust error handling with detailed error codes and messages:
 
 ```typescript
-import { QRIS, SourceType, PaymentFeeCategory } from 'modify-qris-js';
+import { QRIS, SourceType, PaymentFeeCategory } from 'modify-qris';
 
 // Example with proper error handling
 try {

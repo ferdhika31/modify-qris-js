@@ -28,7 +28,6 @@
 		"dinamis"
 	],
 	"license": "MIT",
-	"readmeFilename": "README.md",
 	"files": [
 		"dist/**/*",
 		"*.md"
@@ -49,5 +48,12 @@
 		"jsqr": "^1.4.0",
 		"qrcode": "^1.5.4",
 		"typescript": "^5.8.2"
-	}
+	},
+	"directories": {
+		"doc": "docs",
+		"example": "examples",
+		"test": "tests"
+	},
+	"author": "Ferdhika Yudira",
+	"types": "./dist/index.d.ts"
 }
