@@ -1,6 +1,6 @@
 # QRIS Dynamic JS
 
-A robust JavaScript/TypeScript library for generating and manipulating QRIS (QR Code Indonesian Standard) codes. This library enables easy creation, modification, and validation of QRIS QR codes with comprehensive error handling.
+A robust JavaScript/TypeScript library for generating dynamic QRIS (QR Code Indonesian Standard) codes. This library enables easy creation, modification, and validation of QRIS QR codes with comprehensive error handling.
 
 ## Features
 
@@ -11,7 +11,6 @@ A robust JavaScript/TypeScript library for generating and manipulating QRIS (QR 
 - ✅ QRIS validation according to ASPI standards
 - ✅ Fee calculations (fixed and percentage)
 - ✅ TypeScript support with complete type definitions
-- ✅ Merchant information customization
 - ✅ CRC validation and generation
 
 ## Installation
@@ -32,7 +31,6 @@ import path from 'path';
 const qris = new QRIS({
     sourceType: SourceType.CODE,  // Directly use a QRIS code string
     sourceValue: '00020101021226...', // Your QRIS string
-    merchantName: 'My Store',
     merchantAddress: 'Jakarta',
     merchantPostalCode: '12345',
     amount: 25000,  // In the smallest currency unit (e.g., IDR)
@@ -61,7 +59,7 @@ import path from 'path';
 const qris = new QRIS({
     sourceType: SourceType.IMAGE_PATH,
     sourceValue: path.join(__dirname, 'existing-qr.png'),
-    merchantName: 'New Merchant Name',  // Override merchant name
+    merchantAddress: 'New Merchant Address',  // Override merchant address
     amount: 50000,  // Set a fixed amount
 });
 
@@ -103,7 +101,7 @@ try {
     const qris = new QRIS({
         sourceType: SourceType.IMAGE_PATH,
         sourceValue: 'non-existent-file.png',
-        merchantName: 'My Store',
+        merchantAddress: 'BANDUNG',
         feeCategory: PaymentFeeCategory.PERCENT,
         fee: 200, // Will cause an error (over 100%)
     });
@@ -170,7 +168,6 @@ try {
 
 | `sourceType` | `string` | Source type (`CODE` or `IMAGE_PATH`) | `CODE` |
 | `sourceValue` | `string` | QRIS code string or image path | - |
-| `merchantName` | `string` | Merchant name to display | - |
 | `merchantAddress` | `string` | Merchant address/city | - |
 | `merchantPostalCode` | `string` | Merchant postal code | - |
 | `amount` | `number` | Transaction amount (0 for dynamic amount) | 0 |
@@ -193,7 +190,6 @@ The library provides a simple API for working with QRIS codes:
 
 #### Configuration Setters
 
-- `setMerchantName(name: string)`
 - `setMerchantAddress(address: string)`
 - `setMerchantPostalCode(postalCode: string)`
 - `setAmount(amount: number)`

@@ -1,6 +1,6 @@
 {
 	"name": "modify-qris",
-	"version": "0.0.1",
+	"version": "0.0.3",
 	"description": "Modify QRIS Generator is a javascript based libraries that enabling flexible payments with customizable amounts for improved efficiency and user experience",
 	"main": "dist/index.js",
 	"scripts": {

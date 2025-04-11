@@ -5,7 +5,6 @@ const path = require('path');
 const dynamicQris = new QRIS({
     sourceType: SourceType.IMAGE_PATH,
     sourceValue: path.join(__dirname, 'sample-qris.jpg'),
-    merchantName: "QR PUNYA DIKA",
     merchantAddress: "BANDUNG",
     merchantPostalCode: "40162",
     amount: 10000, // if not set, amount is flexible

@@ -6,7 +6,6 @@ const qrisCode = '00020101021126740025ID.CO.BANKNEOCOMMERCE.WWW01189360049059402
 const dynamicQris = new QRIS({
     sourceType: SourceType.CODE,
     sourceValue: qrisCode,
-    merchantName: "QR PUNYA FERDHIKA",
     merchantAddress: "BANDUNG",
     merchantPostalCode: "40162",
     amount: 100, // if not set, amount is flexible
