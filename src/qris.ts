@@ -57,6 +57,10 @@ export class QRIS {
         if (config.fee) {
             this.setFee(config.fee);
         }
+
+        if (config.terminalLabel) {
+            this.setTerminalLabelCategory(config.terminalLabel);
+        }
 	}
 
     public setMerchantName(merchantName: string): void {
